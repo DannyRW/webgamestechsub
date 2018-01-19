@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>First Responder</title>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<script type="text/javascript" src="js.js"></script>
+</head>
+
+<body class ="home">
+					<h1>Talk him down</h1>
+
+					<p>You slowly approach the man, telling him that more police are on the way, that if he shoots you he’ll only make things worse for himself. </p>
+					<p id = 'wife'> </p>
+					<p id = 'boy'> </p>
+					<p>The more and more you say the more and more he starts to shake and slowly lowers his weapon, dropping it when almost in arms reach.</p>
+					<p>He starts crying as you cuff him.</p>
+					<br />
+					<p><a href="end.html"> Leave the basement </a></p> 
+					   
+   <script>
+	
+	var Wsafe = localStorage.getItem('womanSaved');
+	if (Wsafe == 'true') 
+	{
+		document.getElementById('wife').innerHTML = "that the woman he's shot is still alive.";
+	}
+	var Wsafe = localStorage.getItem('boyFound');
+	if (Wsafe == 'true') 
+	{
+		document.getElementById('boy').innerHTML = "that the boy upstairs is scared and confused.";
+	}
+
+	</script>
+    <div id="footer">
+        <p>Made by Danny Warford</p>
+		<a href="info.html"> Info Page </a>
+    </div>
+</body class ="home">
+</html>

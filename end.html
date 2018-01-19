@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<title>First Responder</title>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<script type="text/javascript" src="js.js"></script>
+</head>
+
+<body class ="home">
+					<h1>Ending</h1>
+
+					<p>As you emerge from the basement another squad car pulls up outside and the officers in it walk up to the house, followed swiftly by an ambulance and paramedics. </p>
+					<p id = 'uniform'> One of the officers looks at you and comments that it was stupid to go in alone, you know he's right but tell him that you got out fine so what does it matter. One of them heads downstairs while you go out to your car.</p>
+					<p id = 'wife'> You sit out on the bonnet of your car for a few minutes and eventually the paramedics emerge with a body bag on the stretcher, you look away. </p>
+					<p id = 'man'> The officer who went downstairs walks over to his car and radios for the coroner, looks briefly at you, then heads back into the building. </p>
+					<p id = 'boy'>Eventually a child is lead out of the building buy the other officer, just as the ambulance drives away. Unable to contain his feelings any longer he sits down on the steps to his house and starts to weep, asking where his mother is. </p>
+					<br />
+					<p><a href="home.html"> Start again </a></p> 
+					   
+   <script>
+	var uni = localStorage.getItem('uniformDam');
+	var Sboy = localStorage.getItem('boyFound');
+	var Wsafe = localStorage.getItem('womanSaved');
+	var mdead = localStorage.getItem('manDead');
+	   
+	if (uni == 'true') {
+		document.getElementById('uniform').innerHTML = "One of the officers looks at you ripped uniform and asks if you’re alright, while the other heads downstairs, you assure them your fine and head out to your car.";
+	}
+	   
+	if (Wsafe == 'true') {
+		document.getElementById('wife').innerHTML = "You sit out on the bonnet of your car for a few minutes and eventually the paramedics emerge with the woman on a stretcher, she looks up and thanks you as she's wheeled past into the ambulance.";
+	}
+	   
+	if (mdead == 'false') {
+		document.getElementById('man').innerHTML = "The officer who went downstairs leads the man over to his car, sitting him in the back seat as he finishes reading him his rights. His expression is blank and he seems to have plead the 5th. The other office nods at you before sitting in his car to wait for his partner.";
+		document.getElementById('boy').innerHTML = "Eventually a child is lead out of the building buy the other officer, just as the ambulance drives away. he looks over at his father and starts to well up a bit. Unable to contain his feelings any longer he sits down on the steps to his house and starts to weep, asking where his mother is.";
+	}
+	   
+	if (Sboy == 'true') {
+		document.getElementById('boy').innerHTML = "Eventually the child is lead out of the building buy the other officer, just as the ambulance drives away. Unable to contain his feelings any longer he Runs over to you and throws his arms around you, he crying but through it you can hear he's repeating the words “thank you”.";	
+		
+		if (mdead == 'false') {
+				document.getElementById('boy').innerHTML = "Eventually the child is lead out of the building buy the other officer, just as the ambulance drives away. he looks over at his father and starts to well up a bit. Unable to contain his feelings any longer he Runs over to you and throws his arms around you, he crying but through it you can hear he's repeating the words “thank you”.";
+			}
+	}
+
+	</script>
+    <div id="footer">
+        <p>Made by Danny Warford</p>
+		<a href="info.html"> Info Page </a>
+    </div>
+</body class ="home">
+</html>

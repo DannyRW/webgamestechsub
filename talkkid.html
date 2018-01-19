@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<title>First Responder</title>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<script type="text/javascript" src="js.js"></script>
+</head>
+
+<body class ="home">
+					<h1>Talk to the kid</h1>
+
+					<p id = 'boy'>You walk over and sit down by the boy he looks up at you “your a cop aint ya”.</p>
+					<p>You and him start talking and after a few moments he asks what happened here, he says he hear his parents arguing then a shot, he’s hidden here since.</p>
+					<p>He ask you to keep him safe, you promise you will.</p>
+					<br />
+					<p><a href="hallreturn.html"> Return to the hall </a></p>  
+					
+	<script>
+	
+    localStorage.setItem('boyFound', true);
+	var damuni = localStorage.getItem('uniformDam');
+	if (damuni == 'true') 
+	{
+		document.getElementById('boy').innerHTML = "You walk over and sit down by the boy he looks up at you “your a cop aint ya, you look kinda badass”.";
+	}
+	</script>
+
+    <div id="footer">
+        <p>Made by Danny Warford</p>
+		<a href="info.html"> Info Page </a>
+    </div>
+</body class ="home">
+</html>

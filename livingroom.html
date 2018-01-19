@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<title>First Responder</title>
+<link rel="stylesheet" href="css.css" type="text/css" />
+<script type="text/javascript" src="js.js"></script>
+</head>
+
+<body class ="home">
+				
+	
+					<h1>Living room</h1>
+
+					<p>There's a woman in the room, shot and fallen through a glass table, barely clinging to life.</p>
+					<p>She looks up as you enter and in a quiet pained voice, barely a whisper, says “help me”.</p>
+					<br />
+					<a href="help.html" id='help'> Try and help </a>
+					<br />
+					<br />
+					<a href="hallreturn.html"> Return to the hall </a>
+	
+    <script>
+	
+	var meds = localStorage.getItem('haveMeds');
+	if (meds == 'true') 
+	{
+		var helpbutton = document.getElementById('help');
+ 		helpbutton.href = 'helpmeds.html';
+	}
+
+	</script>
+
+    <div id="footer">
+        <p>Made by Danny Warford</p>
+		<a href="info.html"> Info Page </a>
+    </div>
+</body class ="home">
+</html>

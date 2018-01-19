@@ -1,0 +1,27 @@
+#footer {
+	position: fixed;
+	text-align: left;
+	margin: 15px;
+	font-size: 15px;
+	bottom: 0px;
+	right: 0px;
+}
+
+body {
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+a {
+	color: white;
+	
+}
+
+h1 {
+	margin-top: 130px;
+	font-size: 35px;
+	font-family: sans-serif;
+}
